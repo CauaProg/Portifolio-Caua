@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cauã Moraes de Abreu | Portfólio Acadêmico</title>
+    <title data-i18n="pageTitle">Cauã Moraes de Abreu | Portfólio Acadêmico</title>
     
     <!-- Tags de SEO -->
-    <meta name="description" content="Portfólio acadêmico de Cauã Moraes de Abreu, estudante do 3º período de Ciência da Computação / Sistemas de Informação.">
+    <meta name="description" data-i18n-content="metaDescription" content="Portfólio acadêmico de Cauã Moraes de Abreu, estudante do 4º período de Sistemas de Informação.">
     <meta name="keywords" content="Cauã Moraes, CauaProg, Portfólio, Python, Flask, SQL, Sistemas de Informação">
     <meta name="author" content="Cauã Moraes de Abreu">
     
@@ -32,12 +32,13 @@
             <a href="#" class="navLogo">Cauã Moraes</a>
             
             <ul class="navMenu">
-                <li><a href="#about" class="navLink">Sobre</a></li>
-                <li><a href="#projects" class="navLink">Projetos</a></li>
-                <li><a href="#skills" class="navLink">Habilidades</a></li>
-                <li><a href="#experience" class="navLink">Experiência</a></li>
-                <li><a href="#education" class="navLink">Formação</a></li>
+                <li><a href="#about" class="navLink" data-i18n="navAbout">Sobre</a></li>
+                <li><a href="#projects" class="navLink" data-i18n="navProjects">Projetos</a></li>
+                <li><a href="#skills" class="navLink" data-i18n="navSkills">Habilidades</a></li>
+                <li><a href="#experience" class="navLink" data-i18n="navExperience">Experiência</a></li>
+                <li><a href="#education" class="navLink" data-i18n="navEducation">Formação</a></li>
             </ul>
+            <button id="languageToggle" class="languageBtn" type="button" aria-label="Change language">EN</button>
         </nav>
     </header>
 
@@ -46,12 +47,12 @@
         <!-- Apresentação inicial (Hero) -->
         <section class="heroSection" id="hero">
             <div class="heroContainer">
-                <span class="heroGreeting">Olá, meu nome é</span>
+                <span class="heroGreeting" data-i18n="heroGreeting">Olá, meu nome é</span>
                 <h1 class="heroTitle">Cauã Moraes de Abreu</h1>
                 <p class="heroSubtitle">
                     <span id="typewriter"></span><span class="typewriter-cursor">|</span>
                 </p>
-                <p class="heroLead">Estudante de graduação focado em arquitetura de sistemas, desenvolvimento backend e banco de dados. Atualmente no 3º período, buscando oportunidades de estágio em Tecnologia.</p>
+                <p class="heroLead" data-i18n="heroLead">Estudante de Sistemas de Informação focado em arquitetura de sistemas, desenvolvimento backend e banco de dados. Atualmente no 4º período, buscando oportunidades de estágio em Tecnologia.</p>
                 
                 <div class="contactLinks">
                     <a href="mailto:cauamoraesdeabreu2006@gmail.com" class="contactBtn" id="btn-email">
@@ -76,25 +77,25 @@
 
         <!-- Sobre mim -->
         <section class="aboutSection reveal" id="about">
-            <h2>Sobre Mim</h2>
+            <h2 data-i18n="aboutTitle">Sobre Mim</h2>
             <div class="aboutCard student-card">
-                <p>Estudante de <strong>Sistemas de Informação</strong> apaixonado por desenvolvimento de software, arquitetura de sistemas e resolução de problemas práticos através de código limpo e estruturado. Com sólida base teórica combinada a conhecimentos práticos em desenvolvimento web e de jogos, atuei como monitor acadêmico, auxiliando alunos no aprendizado de algoritmos.</p>
-                <p>Busco aplicar meus conhecimentos técnicos em um ambiente profissional corporativo por meio de um estágio em Tecnologia, no qual possa contribuir para a criação de soluções eficientes, colaborar com equipes dinâmicas e continuar aprimorando minhas competências técnicas.</p>
+                <p data-i18n-html="aboutP1">Estudante de <strong>Sistemas de Informação</strong> apaixonado por desenvolvimento de software, arquitetura de sistemas e resolução de problemas práticos através de código limpo e estruturado. Com sólida base teórica combinada a conhecimentos práticos em desenvolvimento web e de jogos, atuei como monitor acadêmico, auxiliando alunos no aprendizado de algoritmos.</p>
+                <p data-i18n="aboutP2">Busco aplicar meus conhecimentos técnicos em um ambiente profissional corporativo por meio de um estágio em Tecnologia, no qual possa contribuir para a criação de soluções eficientes, colaborar com equipes dinâmicas e continuar aprimorando minhas competências técnicas.</p>
             </div>
         </section>
 
         <!-- Projetos destacados -->
         <section class="projectsSection reveal" id="projects">
-            <h2>Projetos em Destaque</h2>
+            <h2 data-i18n="projectsTitle">Projetos em Destaque</h2>
             <div class="projectsGrid">
                 
                 <!-- Projeto 1: GAIARB -->
                 <article class="projectCard student-card">
                     <div class="projectHeader">
-                        <span class="projectTag font-bold text-xs uppercase tracking-wider text-indigo-400 bg-indigo-950 px-2 py-0.5 rounded">ONG GAIARB</span>
-                        <h3>GAIARB - Gestão de Doadores</h3>
+                        <span class="projectTag font-bold text-xs uppercase tracking-wider text-indigo-400 bg-indigo-950 px-2 py-0.5 rounded" data-i18n="project1Tag">ONG GAIARB</span>
+                        <h3 data-i18n="project1Title">GAIARB - Gestão de Doadores</h3>
                     </div>
-                    <p class="projectDesc">Sistema web desenvolvido para auxiliar a ONG GAIARB no gerenciamento de doadores e doações para apoiar mães atípicas. Permite cadastro de doadores, consulta ágil de histórico e integração da API Mercado Pago para captação de recursos.</p>
+                    <p class="projectDesc" data-i18n="project1Desc">Sistema web desenvolvido para auxiliar a ONG GAIARB no gerenciamento de doadores e doações para apoiar mães atípicas. Permite cadastro de doadores, consulta ágil de histórico e integração da API Mercado Pago para captação de recursos.</p>
                     <p class="techBadges">
                         <span>Flask (Python)</span> 
                         <span>MySQL</span> 
@@ -104,22 +105,36 @@
                     <div class="projectLinks">
                         <a href="https://github.com/CauaProg/Site-Gaiarb-ONG" target="_blank" rel="noopener noreferrer" class="codeLink">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                            Código Fonte
+                            <span data-i18n="sourceCode">Código Fonte</span>
                         </a>
                         <a href="https://site-gaiarb-ong.onrender.com/index.html" target="_blank" rel="noopener noreferrer" class="codeLink demoLink">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            Visualizar Site
+                            <span data-i18n="viewSite">Visualizar Site</span>
                         </a>
                     </div>
                 </article>
 
-                <!-- Projeto 2: Loja Virtual -->
+                <!-- Projeto 2: Memory Assessment Game -->
                 <article class="projectCard student-card">
                     <div class="projectHeader">
-                        <span class="projectTag font-bold text-xs uppercase tracking-wider text-indigo-400 bg-indigo-950 px-2 py-0.5 rounded">Banco de Dados</span>
-                        <h3>Loja Virtual - Controle de Estoque</h3>
+                        <span class="projectTag font-bold text-xs uppercase tracking-wider text-indigo-400 bg-indigo-950 px-2 py-0.5 rounded" data-i18n="projectMemoryTag">Unity / C#</span>
+                        <h3 data-i18n="projectMemoryTitle">Jogo de Avaliação de Memória</h3>
                     </div>
-                    <p class="projectDesc">Sistema desenvolvido para consolidar conhecimentos de banco de dados e backend em Python. Permite o controle completo de estoque de produtos (Adicionar, Listar, Atualizar e Deletar) integrado via terminal a um banco de dados MySQL.</p>
+                    <p class="projectDesc" data-i18n="projectMemoryDesc">Jogo point-and-click desenvolvido em Unity e C# no qual o usuário organiza uma mala. O projeto foi criado para auxiliar na medição da capacidade de memória de idosos com Alzheimer.</p>
+                    <p class="techBadges">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Game Design</span>
+                    </p>
+                </article>
+
+                <!-- Projeto 3: Loja Virtual -->
+                <article class="projectCard student-card">
+                    <div class="projectHeader">
+                        <span class="projectTag font-bold text-xs uppercase tracking-wider text-indigo-400 bg-indigo-950 px-2 py-0.5 rounded" data-i18n="project2Tag">Banco de Dados</span>
+                        <h3 data-i18n="project2Title">Loja Virtual - Controle de Estoque</h3>
+                    </div>
+                    <p class="projectDesc" data-i18n="project2Desc">Sistema desenvolvido para consolidar conhecimentos de banco de dados e backend em Python. Permite o controle completo de estoque de produtos (Adicionar, Listar, Atualizar e Deletar) integrado via terminal a um banco de dados MySQL.</p>
                     <p class="techBadges">
                         <span>Python</span> 
                         <span>MySQL</span> 
@@ -128,7 +143,7 @@
                     <div class="projectLinks">
                         <a href="https://github.com/CauaProg/Loja-Virtual" target="_blank" rel="noopener noreferrer" class="codeLink">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                            Código Fonte
+                            <span data-i18n="sourceCode">Código Fonte</span>
                         </a>
                     </div>
                 </article>
@@ -137,46 +152,46 @@
 
         <!-- Habilidades -->
         <section class="skillsSection reveal" id="skills">
-            <h2>Habilidades Técnicas</h2>
+            <h2 data-i18n="skillsTitle">Habilidades Técnicas</h2>
             <div class="skillsGrid">
                 
                 <div class="skillCategory student-card">
                     <div class="skillHeader">
                         <div class="skillIcon">💻</div>
-                        <h3>Linguagens</h3>
+                        <h3 data-i18n="skillCatLanguages">Linguagens</h3>
                     </div>
                     <ul>
-                        <li><span class="skillName">Python</span><span class="skillBadge">Intermediário</span></li>
-                        <li><span class="skillName">JavaScript</span><span class="skillBadge">Intermediário</span></li>
-                        <li><span class="skillName">C#</span><span class="skillBadge">Intermediário</span></li>
-                        <li><span class="skillName">C</span><span class="skillBadge">Intermediário</span></li>
-                        <li><span class="skillName">Java</span><span class="skillBadge">Iniciante</span></li>
+                        <li><span class="skillName">Python</span><span class="skillBadge" data-i18n="levelIntermediate">Intermediário</span></li>
+                        <li><span class="skillName">JavaScript</span><span class="skillBadge" data-i18n="levelIntermediate">Intermediário</span></li>
+                        <li><span class="skillName">C#</span><span class="skillBadge" data-i18n="levelIntermediate">Intermediário</span></li>
+                        <li><span class="skillName">C</span><span class="skillBadge" data-i18n="levelIntermediate">Intermediário</span></li>
+                        <li><span class="skillName">Java</span><span class="skillBadge" data-i18n="levelBeginner">Iniciante</span></li>
                     </ul>
                 </div>
 
                 <div class="skillCategory student-card">
                     <div class="skillHeader">
                         <div class="skillIcon">🌐</div>
-                        <h3>Web & Banco de Dados</h3>
+                        <h3 data-i18n="skillCatWebDb">Web & Banco de Dados</h3>
                     </div>
                     <ul>
-                        <li><span class="skillName">Flask</span><span class="skillBadge">Intermediário</span></li>
-                        <li><span class="skillName">HTML5 & CSS3</span><span class="skillBadge">Avançado</span></li>
-                        <li><span class="skillName">MySQL / SQL</span><span class="skillBadge">Intermediário</span></li>
-                        <li><span class="skillName">Integrações de API</span><span class="skillBadge">Iniciante</span></li>
+                        <li><span class="skillName">Flask</span><span class="skillBadge" data-i18n="levelIntermediate">Intermediário</span></li>
+                        <li><span class="skillName">HTML5 & CSS3</span><span class="skillBadge" data-i18n="levelAdvanced">Avançado</span></li>
+                        <li><span class="skillName">MySQL / SQL</span><span class="skillBadge" data-i18n="levelIntermediate">Intermediário</span></li>
+                        <li><span class="skillName" data-i18n="apiIntegrations">Integrações de API</span><span class="skillBadge" data-i18n="levelBeginner">Iniciante</span></li>
                     </ul>
                 </div>
 
                 <div class="skillCategory student-card">
                     <div class="skillHeader">
                         <div class="skillIcon">🛠️</div>
-                        <h3>Ferramentas & Idiomas</h3>
+                        <h3 data-i18n="skillCatTools">Ferramentas & Idiomas</h3>
                     </div>
                     <ul>
-                        <li><span class="skillName">Git & GitHub</span><span class="skillBadge">Avançado</span></li>
-                        <li><span class="skillName">Scrum & Kanban</span><span class="skillBadge">Intermediário</span></li>
-                        <li><span class="skillName">Trello</span><span class="skillBadge">Intermediário</span></li>
-                        <li><span class="skillName">Inglês</span><span class="skillBadge">Avançado</span></li>
+                        <li><span class="skillName">Git & GitHub</span><span class="skillBadge" data-i18n="levelAdvanced">Avançado</span></li>
+                        <li><span class="skillName">Scrum & Kanban</span><span class="skillBadge" data-i18n="levelIntermediate">Intermediário</span></li>
+                        <li><span class="skillName">Trello</span><span class="skillBadge" data-i18n="levelIntermediate">Intermediário</span></li>
+                        <li><span class="skillName" data-i18n="englishSkill">Inglês</span><span class="skillBadge" data-i18n="levelAdvanced">Avançado</span></li>
                     </ul>
                 </div>
             </div>
@@ -184,57 +199,57 @@
 
         <!-- Experiência -->
         <section class="experienceSection reveal" id="experience">
-            <h2>Experiência Profissional / Acadêmica</h2>
+            <h2 data-i18n="experienceTitle">Experiência Profissional / Acadêmica</h2>
             <div class="timeline">
                 
                 <div class="timelineItem">
                     <div class="timelineDot"></div>
                     <div class="timelineHeader">
-                        <h3>Desenvolvedor de Jogos</h3>
-                        <span class="timelinePeriod">Maio de 2025 - Atualmente</span>
+                        <h3 data-i18n="exp1Title">Desenvolvedor de Jogos</h3>
+                        <span class="timelinePeriod" data-i18n="exp1Period">Maio de 2025 - Atualmente</span>
                     </div>
                     <h4 class="timelineCompany">UnityLab</h4>
-                    <p class="timelineDesc">Desenvolvimento de lógicas de jogabilidade robustas, algoritmos de colisão em C# e interface de usuário. Colaboração em equipes acadêmicas ágeis com foco em otimização de performance e controle de versão.</p>
+                    <p class="timelineDesc" data-i18n="exp1Desc">Atuação no UnityLab, projeto da empresa júnior Ânimo da Unilasalle, com desenvolvimento de lógicas de jogabilidade robustas, algoritmos de colisão em C# e interface de usuário. Colaboração em equipes acadêmicas ágeis com foco em otimização de performance e controle de versão.</p>
                 </div>
                 
                 <div class="timelineItem">
                     <div class="timelineDot"></div>
                     <div class="timelineHeader">
-                        <h3>Monitor de Programação I</h3>
-                        <span class="timelinePeriod">Março de 2026 - Julho de 2026</span>
+                        <h3 data-i18n="exp2Title">Monitor de Programação I</h3>
+                        <span class="timelinePeriod" data-i18n="exp2Period">Março de 2026 - Julho de 2026</span>
                     </div>
                     <h4 class="timelineCompany">Unilasalle-RJ</h4>
-                    <p class="timelineDesc">Responsável pelo suporte pedagógico e laboratorial a graduandos em disciplinas de algoritmos e programação de computadores, auxiliando na compreensão de lógica de programação e depuração de código.</p>
+                    <p class="timelineDesc" data-i18n="exp2Desc">Responsável pelo suporte pedagógico e laboratorial a graduandos em disciplinas de algoritmos e programação de computadores, auxiliando na compreensão de lógica de programação e depuração de código.</p>
                 </div>
             </div>
         </section>
 
         <!-- Formação -->
         <section class="educationSection reveal" id="education">
-            <h2>Formação Acadêmica</h2>
+            <h2 data-i18n="educationTitle">Formação Acadêmica</h2>
             <div class="educationGrid">
                 
                 <div class="educationItem space-card">
                     <div class="educationCardHeader">
                         <span class="educationIcon">🎓</span>
-                        <h3>Bacharelado em Ciência da Computação</h3>
+                        <h3 data-i18n="edu1Title">Bacharelado em Sistemas de Informação</h3>
                     </div>
                     <p class="educationInstitution">Unilasalle-RJ</p>
                     <div class="educationFooter">
                         <span class="educationPeriod">2025 - 2028</span>
-                        <span class="educationStatus">Em andamento</span>
+                        <span class="educationStatus" data-i18n="statusInProgress">Em andamento</span>
                     </div>
                 </div>
 
                 <div class="educationItem space-card">
                     <div class="educationCardHeader">
                         <span class="educationIcon">🛠️</span>
-                        <h3>Técnico em Eletromecânica</h3>
+                        <h3 data-i18n="edu2Title">Técnico em Eletromecânica</h3>
                     </div>
                     <p class="educationInstitution">ETE Helber Vignoli Muniz - FAETEC</p>
                     <div class="educationFooter">
                         <span class="educationPeriod">2022 - 2024</span>
-                        <span class="educationStatus">Concluído</span>
+                        <span class="educationStatus" data-i18n="statusCompleted">Concluído</span>
                     </div>
                 </div>
             </div>
@@ -243,8 +258,8 @@
 
     <footer class="mainFooter">
         <div class="footerContainer">
-            <p>&copy; 2026 Cauã Moraes de Abreu. Desenvolvido com HTML5 e CSS3.</p>
-            <p class="footerCredits">Portfólio de Estudante Acadêmico - Simples e Direto.</p>
+            <p data-i18n-html="footerMain">&copy; 2026 Cauã Moraes de Abreu. Desenvolvido com HTML5 e CSS3.</p>
+            <p class="footerCredits" data-i18n="footerCredits">Portfólio de Estudante Acadêmico - Simples e Direto.</p>
         </div>
     </footer>
 

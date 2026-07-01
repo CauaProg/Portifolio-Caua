@@ -569,3 +569,32 @@ h2 {
     opacity: 1;
     transform: translateY(0);
 }
+/* ==========================================================================
+   Botão de idioma
+   ========================================================================== */
+.languageBtn {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--card-border);
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.languageBtn:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+    .navContainer {
+        gap: 12px;
+    }
+
+    .languageBtn {
+        margin-left: auto;
+    }
+}
